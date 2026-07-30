@@ -419,6 +419,10 @@ h1 span {
     margin: auto;
 }
 
+.faq-container {
+    padding: 0 16px;
+}
+
 details {
     background-color: #f6cb4f;
     border-radius: 20px;
