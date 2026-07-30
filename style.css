@@ -88,7 +88,7 @@ header img {
 }
 
 .slider-a {
-    background-image: .;
+    background-image: 
     width: 250px ;
     height: 533px;
     justify-content: center;
@@ -116,4 +116,61 @@ header img {
     height: 40px;
     display: block;
     object-fit: contain;
+}
+
+.footer-mob {
+    width: 100%;
+ 
+    min-height: 134px;
+    margin: 0 auto;
+    padding: 30px 24px;
+
+    background-color: #4eaa87;
+    color: #ffffff;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.copyright-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.copyright-text img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.social-icons .youtube {
+    width: 32px;
 }
