@@ -72,6 +72,7 @@ header img {
     color: rgba(75, 169, 206, 0.747);
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
 }
 
@@ -87,12 +88,31 @@ header img {
     font-size: 40px;
 }
 
+.slider-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .slider-a {
-    background-image: .;
+    
+
+    background-color: black;
     width: 250px ;
     height: 533px;
+    
+}
+
+.slider-a input {
     justify-content: center;
 }
+
+
+
+
+
+
+
 
 .footer {
     width: 100%;
