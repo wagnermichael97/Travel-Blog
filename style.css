@@ -90,24 +90,34 @@ header img {
     font-size: 40px;
 }
 
-.slider-all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
 }
 
-.slider-a {
-    
+.slider>input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
 
-    background-color: black;
+
+
+.slide {
+    width: calc(100% / 3);
+    height: 500px;
+    object-fit: cover;
+    border-top-right-radius: 80px;
    
-    width: 250px ;
-    height: 533px;
-    
 }
 
-.slider-a input {
-    justify-content: center;
+.slider-wrapper {
+    display: flex;
+    width: 300%;
+    height: 100%;
 }
 
 
@@ -182,8 +192,7 @@ summary {
     font-weight: 700;
     font-family: "Palanquin Dark";
     font-size: 16px;
-    padding: 0;
-    margin: 0;
+    
 }
 
 summary::after {

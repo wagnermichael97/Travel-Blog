@@ -30,35 +30,45 @@
     </section>
 
     <main>
+
         <section class="highlights">
 
             <img src="./assets/icons/rocket_launch.png" alt="Rocket Launch Icon">
             <h2> Highlights</h2>
-
         </section>
+
 
         <section class="slider-all">
 
-            <section class="slider-a">
-                <input type="radio" name="slider" value="one" checked>
-                <input type="radio" name="slider" value="two">
-                <input type="radio" name="slider" value="three">
+            <section class="slider">
 
-                <div slider-a-wrapper>
-                    <div class="slider-a-element element-one">
-                        <img src="./assets/img/landing-sicilia.jpg" alt="sizilien bild">
-                    </div>
-                    <div class="slider-a-element element-two">
-                        <img src="./assets/img/landing-gardasee.jpg" alt="gardasee bild">
-                    </div>
-                    <div class="slider-a-element element-three">
-                        <img src="./assets/img/landing-krakau.jpg" alt="krakau bild">
-                    </div>
-            
+
+                <input type="radio" name="slider" id="one" checked>
+                <input type="radio" name="slider" id="two">
+                <input type="radio" name="slider" id="three">
+
+
+                <div slider-wrapper>
+
+                    <img class="slide" src="./assets/img/landing-sicilia.jpg" alt="Sizilien">
+                    <img class="slide" src="./assets/img/landing-gardasee.jpg" alt="Gardasee">
+                    <img class="slide" src="./assets/img/landing-krakau.jpg" alt="Krakau">
+
+                </div>
+
+                <div class="slider-dots">
+                    <label for="one"></label>
+                    <label for="two"></label>
+                    <label for="three"></label>
+
                 </div>
 
             </section>
+
         </section>
+
+
+
 
 
     </main>
