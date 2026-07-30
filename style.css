@@ -91,4 +91,34 @@ header img {
     background-image: .;
     width: 250px ;
     height: 533px;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    height: 88px;
+    background-color: rgba(75, 169, 206, 0.747);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icons a {
+    width: 40px;
+    height: 40px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: contain;
 }
