@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Arima";
     src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
@@ -39,7 +37,7 @@ header {
 }
 
 header img {
-    
+
     width: 56px;
     height: 56px;
 }
@@ -47,9 +45,9 @@ header img {
 .landing-page {
     height: 515px;
     background-image: url(./assets/img/blackground-image.jpg);
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 
     display: flex;
     padding-top: 121px;
@@ -70,18 +68,29 @@ header img {
 
 .highlights {
     padding-top: 70px;
-    font-family: "Arima";
-    font-weight: 700;
-    font-size: 2.5rem;
-
+    padding-bottom: 32px;
     color: rgba(75, 169, 206, 0.747);
     display: flex;
     justify-content: center;
+    gap: 8px;
 }
 
 .highlights img {
     width: 40px;
     height: 40px;
+    align-items: center;
+}
+
+.highlights h2 {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.slider-a {
+    background-image: .;
+    width: 250px ;
+    height: 533px;
     justify-content: center;
 }
 
