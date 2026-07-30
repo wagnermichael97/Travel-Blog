@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Arima";
     src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
@@ -39,7 +37,7 @@ header {
 }
 
 header img {
-    
+
     width: 56px;
     height: 56px;
 }
@@ -47,9 +45,9 @@ header img {
 .landing-page {
     height: 515px;
     background-image: url(./assets/img/blackground-image.jpg);
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 
     display: flex;
     padding-top: 121px;
@@ -83,4 +81,90 @@ header img {
     width: 40px;
     height: 40px;
     justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 40px;
+    color: #49a58c;
+    margin-bottom: 35px;
+    font-family: "Arima";
+    font-weight: 700;
+
+}
+
+h1 img {
+    width: 45px;
+    height: 45px;
+}
+
+h1 span {
+    color: rgba(75, 169, 206, 0.747);
+}
+
+.faq_section img {
+    width: 30px;
+    height: 35px;
+    display: flex;
+
+}
+
+.faq {
+    width: 375px;
+    margin: auto;
+}
+
+details {
+    background-color: #f6cb4f;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 16px 14px 16px 14px;
+}
+
+
+details p {
+    font-size: 16px;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-style: bold;
+    font-weight: 400;
+    font-family: "Palanquin Dark";
+}
+
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-style: bold;
+    font-weight: 700;
+    font-family: "Palanquin Dark";
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+summary::after {
+    content: "✈︎";
+    font-size: 38px;
+    margin-left: auto;
+    padding-left: 30px;
+}
+
+details[open] summary::after {
+    content: "🌍";
+}
+
+main {
+    padding-left: 16px;
+    padding-right: 16px;
+
 }
