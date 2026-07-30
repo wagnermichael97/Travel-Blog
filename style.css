@@ -1,11 +1,4 @@
-:root {
-    --green: #4eaa87;
-    --yellow: #f7cb50;
-    --brown: #4b321f;
-    --white: #ffffff;
-    --line: #c9bda9;
-    --content-width: 1200px;
-}
+
 
 @font-face {
     font-family: "Arima";
@@ -58,5 +51,13 @@ header img {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
-    
+
+    display: flex;
+    padding-top: 121px;
+    padding-left: 71px;
+}
+
+.landing-page img {
+    height: 49px;
+    width: 49px;
 }
