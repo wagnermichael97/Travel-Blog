@@ -99,13 +99,13 @@ header img {
 
 .slider-wrapper {
     position: relative;
-    max-width: 48rem;
+    
 }
 
 .slider {
     display: flex;
     
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     border-top-right-radius: 80px;
