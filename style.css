@@ -56,15 +56,27 @@ header img {
 
 
 
-.circle {
-    background-color: rgba(75, 169, 206, 0.747);
+.landing-page img {
+    
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    animation: globe 100s linear infinite;
+    
 }
+
+@keyframes globe {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
 
 .highlights {
     padding-top: 70px;
