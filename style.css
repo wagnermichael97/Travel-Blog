@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Arima";
     src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
@@ -54,31 +52,18 @@ header img {
     display: flex;
     padding-top: 121px;
     padding-left: 71px;
-    
 }
 
 
 
-.landing-page img {
+.circle {
     background-color: rgba(75, 169, 206, 0.747);
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    animation: globe 100s linear infinite;
-    
-    
-}
-
-@keyframes globe {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-10px) rotate(180deg);
-    }
-    100% {
-        transform: translateY(0) rotate(360deg);
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .highlights {
@@ -104,21 +89,21 @@ header img {
 }
 
 .slider-container {
-    
+
     padding-left: 20px;
-    padding-right: 20px ;
+    padding-right: 20px;
     padding-bottom: 32px;
 }
 
 .slider-wrapper {
     position: relative;
-    
+    max-width: 48rem;
 }
 
 .slider {
     display: flex;
-    
-    overflow-x: hidden;
+
+    overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     border-top-right-radius: 80px;
@@ -136,16 +121,16 @@ header img {
     display: flex;
     position: absolute;
     column-gap: 1rem;
-    bottom: 2rem;
+    bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    
+
 }
 
 .slider-nav a {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: #ffffff;
     opacity: 0.75;
@@ -239,7 +224,7 @@ summary {
     font-weight: 700;
     font-family: "Palanquin Dark";
     font-size: 16px;
-    
+
 }
 
 summary::after {
@@ -258,16 +243,14 @@ main {
     padding-right: 16px;
 }
 
-.nav-bar-footer {
+.footer {
     width: 100%;
     height: 88px;
-    background-color: #f6cb4f;
+    background-color: rgba(75, 169, 206, 0.747);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
 .icons {
@@ -291,12 +274,12 @@ main {
 
 .footer-mob {
     width: 100%;
- 
+
     min-height: 134px;
     margin: 0 auto;
     padding: 30px 24px;
 
-    background-color: rgba(75, 169, 206, 0.747);
+    background-color: #4eaa87;
     color: #ffffff;
 
     display: flex;
@@ -346,6 +329,348 @@ main {
     width: 32px;
 }
 
+@font-face {
+    font-family: "Arima";
+    src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Palanquin Dark";
+    src: url("./assets/fonts/palanquin-dark-v17-latin-regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Palanquin Dark";
+    src: url("./assets/fonts/palanquin-dark-v17-latin-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(75, 169, 206, 0.747);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+
+    width: 56px;
+    height: 56px;
+}
+
+.landing-page {
+    height: 515px;
+    background-image: url(./assets/img/blackground-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    padding-top: 121px;
+    padding-left: 71px;
+}
 
 
 
+.circle {
+    background-color: rgba(75, 169, 206, 0.747);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlights {
+    padding-top: 70px;
+    padding-bottom: 32px;
+    color: rgba(75, 169, 206, 0.747);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.highlights img {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.highlights h2 {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.slider-a {
+
+    width: 250px;
+    height: 533px;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 40px;
+    color: #49a58c;
+    margin-bottom: 35px;
+    font-family: "Arima";
+    font-weight: 700;
+
+}
+
+h1 img {
+    width: 45px;
+    height: 45px;
+}
+
+h1 span {
+    color: rgba(75, 169, 206, 0.747);
+}
+
+.faq_section img {
+    width: 30px;
+    height: 35px;
+    display: flex;
+
+}
+
+.faq {
+    width: 375px;
+    margin: auto;
+}
+
+.faq-container {
+    padding: 0 20px;
+}
+
+details {
+    background-color: #f6cb4f;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 16px 14px 16px 14px;
+}
+
+
+details p {
+    font-size: 16px;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-style: bold;
+    font-weight: 400;
+    font-family: "Palanquin Dark";
+}
+
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-style: bold;
+    font-weight: 700;
+    font-family: "Palanquin Dark";
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+summary::after {
+    content: "✈︎";
+    font-size: 38px;
+    margin-left: auto;
+    padding-left: 30px;
+}
+
+details[open] summary::after {
+    content: "🌍";
+}
+
+main {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .footer {
+        width: 100%;
+        height: 88px;
+        background-color: rgba(75, 169, 206, 0.747);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .icons img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        object-fit: contain;
+    }
+
+    .footer-mob {
+        width: 100%;
+
+        min-height: 134px;
+        margin: 0 auto;
+        padding: 30px 24px;
+
+        background-color: #4eaa87;
+        color: #ffffff;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .footer-text p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .copyright-text {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        white-space: nowrap;
+    }
+
+    .copyright-text img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    .social-icons .youtube {
+        width: 32px;
+    }
+
+}
+
+
+.kontakt {
+    width: 350px;
+    margin: 50px auto;
+    
+}
+
+.kontakt_head {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Arima";
+    font-style: normal;
+    font-weight: 700;
+
+    padding-top: 70px;
+    padding-bottom: 20px;
+    color: rgba(75, 169, 206, 0.747);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.kontakt_head>img {
+    width: 45px;
+    height: 45px;
+}
+
+.kontakt input,
+.kontakt textarea {
+    width: 100%;
+    padding: 12px 0;
+    padding-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    box-sizing: border-box;
+
+    font-family: "Palanquin Dark";
+    font-weight: 500px;
+}
+
+.kontakt textarea {
+    height: 100px;
+}
+
+.button {
+    width: 180px;
+    background: #f6cb4f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: "Palanquin Dark";
+    
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: #8B5A2B;
+    cursor: pointer;
+}
+
+.checkbox p {
+    font-size: 16px;
+    color: #6A4A2C;
+    padding-top: 5px;
+}
