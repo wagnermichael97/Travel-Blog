@@ -54,18 +54,31 @@ header img {
     display: flex;
     padding-top: 121px;
     padding-left: 71px;
+    
 }
 
 
 
-.circle {
+.landing-page img {
     background-color: rgba(75, 169, 206, 0.747);
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    animation: globe 50s linear infinite;
+    
+    
+}
+
+@keyframes globe {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
 }
 
 .highlights {
@@ -253,6 +266,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    
 }
 
 .icons {
