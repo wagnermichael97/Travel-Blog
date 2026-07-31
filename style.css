@@ -128,12 +128,38 @@ header img {
     border-top-right-radius: 80px;
 }
 
-.slider img {
-    flex: 1 0 100%;
-    object-fit: cover;
+.slide {
+    position: relative;
+    flex: 0 0 100%;
     scroll-snap-align: start;
+}
+
+.slide img {
     width: 100%;
     height: 533px;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+
+    padding: 30px 50px;
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+
+    text-shadow: 0 3px 15px rgba(0,0,0,.8);
 }
 
 .slider-nav {
@@ -161,7 +187,7 @@ header img {
 }
 
 
-h1 {
+.faq h1 {
     display: flex;
     justify-content: center;
     align-items: center;
