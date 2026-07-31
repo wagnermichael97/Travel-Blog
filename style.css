@@ -52,31 +52,18 @@ header img {
     display: flex;
     padding-top: 121px;
     padding-left: 71px;
-    
 }
 
 
 
-.landing-page img {
+.circle {
     background-color: rgba(75, 169, 206, 0.747);
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    animation: globe 100s linear infinite;
-    
-    
-}
-
-@keyframes globe {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-10px) rotate(180deg);
-    }
-    100% {
-        transform: translateY(0) rotate(360deg);
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .highlights {
@@ -110,18 +97,13 @@ header img {
 
 .slider-wrapper {
     position: relative;
-    
+    max-width: 48rem;
 }
 
 .slider {
     display: flex;
-<<<<<<< HEAD
 
     overflow-x: auto;
-=======
-    
-    overflow-x: hidden;
->>>>>>> ed22c003ad8141fdac94847f6151ea10162b6927
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     border-top-right-radius: 80px;
@@ -139,7 +121,7 @@ header img {
     display: flex;
     position: absolute;
     column-gap: 1rem;
-    bottom: 2rem;
+    bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -147,8 +129,8 @@ header img {
 }
 
 .slider-nav a {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: #ffffff;
     opacity: 0.75;
@@ -261,16 +243,14 @@ main {
     padding-right: 16px;
 }
 
-.nav-bar-footer {
+.footer {
     width: 100%;
     height: 88px;
-    background-color: #f6cb4f;
+    background-color: rgba(75, 169, 206, 0.747);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
 .icons {
@@ -299,7 +279,7 @@ main {
     margin: 0 auto;
     padding: 30px 24px;
 
-    background-color: rgba(75, 169, 206, 0.747);
+    background-color: #4eaa87;
     color: #ffffff;
 
     display: flex;
@@ -349,6 +329,61 @@ main {
     width: 32px;
 }
 
+@font-face {
+    font-family: "Arima";
+    src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Palanquin Dark";
+    src: url("./assets/fonts/palanquin-dark-v17-latin-regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Palanquin Dark";
+    src: url("./assets/fonts/palanquin-dark-v17-latin-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(75, 169, 206, 0.747);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+
+    width: 56px;
+    height: 56px;
+}
+
+.landing-page {
+    height: 515px;
+    background-image: url(./assets/img/blackground-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    padding-top: 121px;
+    padding-left: 71px;
+}
 
 
 
