@@ -85,6 +85,7 @@ header img {
     height: 160px;
     border-radius: 50%;
     animation: globe 100s linear infinite;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
     
 }
 
@@ -155,6 +156,7 @@ header img {
     height: 533px;
     object-fit: cover;
     display: block;
+    
 }
 
 .slide-text {
