@@ -1,4 +1,3 @@
-
 body {
     color: #333333;
     background-color: #cccccc;
@@ -6,69 +5,54 @@ body {
 }
 
 main {
-    width: 100%;
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     padding: 80px 120px;
     background-color: #ffffff;
 }
 
-
-
-
-@media (min-width: 651px) {
-
-    header {
-        width: 100%;
-        max-width: 1440px;
-        height: 128px;
-        margin: 0 auto;
-        padding: 0 120px;
-
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 100px;
-
-        background-color: #4eaa87;
-    }
-
-    header > a,
-    header > a img {
-        width: 72px;
-        height: 72px;
-    }
-
-    header > a {
-        display: flex;
-    }
-
-    header > a img {
-        object-fit: contain;
-    }
-
-    header nav {
-        display: flex;
-        align-items: center;
-        gap: 70px;
-    }
-
-    header nav a {
-        color: #f8f5eb;
-        font-family: "Arima", sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    header nav a:hover {
-        color: #f6cb4f;
-    }
+header {
+    width: 1440px;
+    height: 128px;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    background-color: #4eaa87;
 }
 
+header > a {
+    display: flex;
+    width: 72px;
+    height: 72px;
+}
 
+header > a img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
 
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+header nav a {
+    color: #f8f5eb;
+    font-family: "Arima", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f6cb4f;
+}
 
 .article-header {
     display: flex;
@@ -84,7 +68,6 @@ main {
 
 .small-title {
     margin-bottom: 5px;
-
     color: #4eaa87;
     font-family: "Arima", sans-serif;
     font-size: 28px;
@@ -94,7 +77,6 @@ main {
 .article-title h1 {
     display: block;
     margin-bottom: 20px;
-
     color: #f6cb4f;
     font-family: "Arima", sans-serif;
     font-size: 52px;
@@ -104,19 +86,14 @@ main {
 }
 
 .introduction {
-    max-width: 800px;
+    width: 800px;
     margin-bottom: 25px;
-
     font-size: 18px;
     line-height: 1.4;
 }
 
-
-
-
 .article-info {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 25px;
 }
@@ -125,7 +102,6 @@ main {
     display: flex;
     align-items: center;
     gap: 6px;
-
     color: #4eaa87;
     font-size: 13px;
 }
@@ -136,14 +112,10 @@ main {
     object-fit: contain;
 }
 
-
-
-
 .author {
     width: 230px;
     flex-shrink: 0;
     padding: 25px 20px;
-
     text-align: center;
     background-color: #dceee8;
     border-radius: 25px;
@@ -153,7 +125,6 @@ main {
     width: 100px;
     height: 100px;
     margin-bottom: 12px;
-
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -161,7 +132,6 @@ main {
 
 .author h2 {
     margin-bottom: 0;
-
     color: #333333;
     font-family: "Arima", sans-serif;
     font-size: 21px;
@@ -177,36 +147,14 @@ main {
     line-height: 1.35;
 }
 
-
-
-
-.article-text,
-.tips {
-    width: 100%;
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.article-image,
-.video-section {
-    width: 100%;
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-
-
 .article-text {
-    margin-bottom: 55px;
+    width: 1000px;
+    margin: 0 auto 55px;
 }
 
 .article-text h2,
 .video-section h2 {
     margin-bottom: 18px;
-
     color: #4eaa87;
     font-family: "Arima", sans-serif;
     font-size: 32px;
@@ -229,29 +177,22 @@ main {
     line-height: 1.5;
 }
 
-
-
-
 .article-image {
-    margin-top: 55px;
-    margin-bottom: 55px;
+    width: 900px;
+    margin: 55px auto;
 }
 
 .article-image img {
     display: block;
-    width: 100%;
+    width: 900px;
     height: 520px;
-
     object-fit: cover;
     border-radius: 50px;
 }
 
-
-
-
 .video-section {
-    margin-top: 55px;
-    margin-bottom: 70px;
+    width: 900px;
+    margin: 55px auto 70px;
 }
 
 .video-section h2 {
@@ -259,44 +200,36 @@ main {
 }
 
 .video {
-    width: 100%;
+    width: 900px;
+    height: 506px;
     overflow: hidden;
-
-    aspect-ratio: 16 / 9;
     background-color: #222222;
     border-radius: 50px;
 }
 
 .video iframe {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 506px;
     border: none;
 }
 
-
-
-
 .tips {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    width: 1000px;
+    margin: 80px auto;
     padding: 30px 40px;
-
     background-color: #dceee8;
     border-radius: 25px;
 }
 
 .tips h2 {
     display: inline-block;
-
     margin-top: -60px;
     margin-bottom: 20px;
     padding: 8px 18px;
-
     color: #f6cb4f;
     font-family: "Arima", sans-serif;
     font-size: 26px;
-
     background-color: #4eaa87;
     border-radius: 8px;
     transform: rotate(-7deg);
@@ -306,9 +239,6 @@ main {
     margin: 0;
     padding-left: 25px;
 }
-
-
-
 
 .share {
     margin: 70px auto 30px;
@@ -326,20 +256,14 @@ main {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     margin-top: 20px;
     padding: 10px 25px;
-
     color: #f6cb4f;
     font-weight: 700;
     text-decoration: none;
-
     background-color: #4eaa87;
     border-radius: 25px;
-
-    transition:
-        background-color 0.3s,
-        transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .share a:hover {
@@ -351,160 +275,4 @@ main {
     width: 22px;
     height: 22px;
     object-fit: contain;
-}
-
-
-
-@media (min-width: 651px) and (max-width: 1000px) {
-
-    main {
-        padding: 60px 50px;
-    }
-
-    header {
-        height: 100px;
-        padding: 0 50px;
-        gap: 55px;
-    }
-
-    header > a,
-    header > a img {
-        width: 65px;
-        height: 65px;
-    }
-
-    header nav {
-        gap: 35px;
-    }
-
-    header nav a {
-        font-size: 19px;
-    }
-
-    .article-header {
-        gap: 35px;
-    }
-
-    .small-title {
-        font-size: 24px;
-    }
-
-    .article-title h1 {
-        font-size: 42px;
-    }
-
-    .author {
-        width: 210px;
-    }
-
-    .article-image img {
-        height: 430px;
-    }
-}
-
-
-
-
-@media (max-width: 650px) {
-
-    main {
-        width: 100%;
-        padding: 40px 20px;
-    }
-
-    .article-header {
-        flex-direction: column;
-        gap: 30px;
-        margin-bottom: 40px;
-    }
-
-    .small-title {
-        font-size: 21px;
-    }
-
-    .article-title h1 {
-        font-size: 34px;
-    }
-
-    .introduction,
-    .article-text p {
-        font-size: 16px;
-    }
-
-    .article-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .author {
-        width: 100%;
-    }
-
-    .article-text,
-    .article-image {
-        margin-bottom: 40px;
-    }
-
-    .article-text h2,
-    .video-section h2 {
-        font-size: 27px;
-    }
-
-    .article-image,
-    .video-section {
-        margin-top: 40px;
-    }
-
-    .article-image img,
-    .video {
-        border-radius: 25px;
-    }
-
-    .article-image img {
-        height: 280px;
-    }
-
-    .video-section {
-        margin-bottom: 55px;
-    }
-
-    .tips {
-        margin: 70px auto 50px;
-        padding: 28px 22px;
-    }
-
-    .tips h2 {
-        font-size: 23px;
-    }
-
-    .share {
-        margin-bottom: 40px;
-    }
-}
-
-
-
-
-@media (max-width: 320px) {
-
-    main {
-        padding: 35px 15px;
-    }
-
-    .article-title h1 {
-        font-size: 29px;
-    }
-
-    .small-title {
-        font-size: 19px;
-    }
-
-    .article-image img {
-        height: 220px;
-    }
-
-    .tips {
-        padding: 25px 18px;
-    }
 }
