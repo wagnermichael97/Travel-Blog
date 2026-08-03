@@ -289,16 +289,16 @@ summary {
 
 }
 
-summary::after {
-    content: "↓";
-    font-size: 38px;
-    margin-left: auto;
-    padding-left: 30px;
+summary img {
+    width: 20px;
+    transition: transform 0.3s;
 }
 
-details[open] summary::after {
-    content: "↑";
+details[open] summary img {
+    transform: rotate(180deg);
 }
+
+
 
 
 
