@@ -130,7 +130,7 @@ header img {
 
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 32px;
+    padding-bottom: 80px;
 }
 
 .slider-wrapper {
@@ -431,6 +431,10 @@ button:hover {
 .checkbox a {
     color: #4ba9ce;
     text-decoration: none;
+}
+
+.agb {
+    
 }
 
 
