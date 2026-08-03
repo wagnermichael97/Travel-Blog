@@ -20,7 +20,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     gap: 100px;
-    background-color: #4eaa87;
+    
 }
 
 header > a {
