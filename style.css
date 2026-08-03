@@ -290,22 +290,24 @@ summary {
 }
 
 summary::after {
-    content: "✈︎";
+    content: "↓";
     font-size: 38px;
     margin-left: auto;
     padding-left: 30px;
 }
 
 details[open] summary::after {
-    content: "🌍";
+    content: "↑";
 }
 
 
 
 .kontakt {
-    width: 350px;
-    margin: 50px auto;
-    
+    width:100%;
+    max-width:350px;
+
+    display:flex;
+    flex-direction:column;
 }
 
 .kontakt_head {
@@ -331,53 +333,95 @@ details[open] summary::after {
 .kontakt input,
 .kontakt textarea {
     width: 100%;
-    padding: 12px 0;
-    padding-bottom: 25px;
-    border: none;
-    border-bottom: 2px solid #000000;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
-    box-sizing: border-box;
+    height: 70px;
 
+    border: none;
+    border-bottom: 1px solid #9d8b72;
+    outline: none;
+    background-color: transparent;
+
+    color: #5d3c1c;
     font-family: "Palanquin Dark";
-    font-weight: 500px;
+    font-size: 14px;
 }
 
 .kontakt textarea {
-    height: 100px;
+    height: 70px;
+    padding-top: 20px;
+    resize: none;
 }
 
-.button {
-    width: 180px;
-    background: #f6cb4f;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    border-radius: 5px;
+button {
+    width: 78px;
+    height: 30px;
+
+    border: 1px solid #9c9c9c;
+    border-radius: 20px;
+
+    background: white;
+
+    color: #7b7b7b;
+    font-size: 13px;
     font-family: "Palanquin Dark";
+    font-weight: bold;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     
 }
 
+button:hover {
+    background-color: #f4f4f4;
+}
+
+.contact-section{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:60px 20px;
+}
+
 .checkbox {
+    width: 100%;
+    padding-top: 14px;
+
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 8px;
 }
 
 .checkbox input {
-    width: 18px;
-    height: 18px;
-    margin-top: 3px;
-    accent-color: #8B5A2B;
-    cursor: pointer;
+    width: 11px;
+    height: 11px;
+
+    border: 1px solid #7b4f27;
+    background-color: white;
+
+    flex-shrink: 0;
 }
 
 .checkbox p {
-    font-size: 16px;
-    color: #6A4A2C;
-    padding-top: 5px;
+    padding: 0;
+
+    color: #6a4a2c;
+    font-family: "Palanquin Dark";
+    font-size: 10px;
+}
+
+.checkbox a{
+    color:#4ba9ce;
+    text-decoration:none;
 }
 
 
