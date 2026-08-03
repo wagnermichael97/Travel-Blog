@@ -6,11 +6,11 @@
 }
 
 @font-face {
-  font-display: swap; 
-  font-family: "Palanquin";
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -35,7 +35,7 @@
 }
 
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
@@ -80,22 +80,24 @@ header img {
 
 
 .landing-page img {
-    
+
     width: 160px;
     height: 160px;
     border-radius: 50%;
     animation: globe 100s linear infinite;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
-    
+
 }
 
 @keyframes globe {
     0% {
         transform: translateY(0) rotate(0deg);
     }
+
     50% {
         transform: translateY(-10px) rotate(180deg);
     }
+
     100% {
         transform: translateY(0) rotate(360deg);
     }
@@ -128,7 +130,7 @@ header img {
 
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 32px;
+    padding-bottom: 80px;
 }
 
 .slider-wrapper {
@@ -156,7 +158,7 @@ header img {
     height: 533px;
     object-fit: cover;
     display: block;
-    
+
 }
 
 .slide-text {
@@ -177,9 +179,9 @@ header img {
 
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(2px);
-    
 
-    text-shadow: 0 3px 15px rgba(0,0,0,.8);
+
+    text-shadow: 0 3px 15px rgba(0, 0, 0, .8);
 }
 
 .slide-text h1 {
@@ -282,11 +284,11 @@ summary {
     justify-content: space-between;
     align-items: center;
 
-    font-style: bold;
+    gap: 20px;
     font-weight: 700;
-    font-family: "Palanquin Dark";
+    font-family: "Palanquin";
     font-size: 16px;
-
+    line-height: 120%;
 }
 
 summary img {
@@ -303,11 +305,11 @@ details[open] summary img {
 
 
 .kontakt {
-    width:100%;
-    max-width:350px;
+    width: 100%;
+    max-width: 350px;
 
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 .kontakt_head {
@@ -334,6 +336,8 @@ details[open] summary img {
 .kontakt textarea {
     width: 100%;
     height: 70px;
+    padding-bottom: 30px;
+    margin-top: 30px;
 
     border: none;
     border-bottom: 1px solid #9d8b72;
@@ -341,19 +345,21 @@ details[open] summary img {
     background-color: transparent;
 
     color: #5d3c1c;
-    font-family: "Palanquin Dark";
+    font-family: "Palanquin";
     font-size: 14px;
+    font-weight: 500;
 }
 
 .kontakt textarea {
     height: 70px;
-    padding-top: 20px;
     resize: none;
 }
 
+
+
 button {
-    width: 78px;
-    height: 30px;
+    width: 105px;
+    height: 43px;
 
     border: 1px solid #9c9c9c;
     border-radius: 20px;
@@ -361,10 +367,11 @@ button {
     background: white;
 
     color: #7b7b7b;
-    font-size: 13px;
+    font-size: 20px;
     font-family: "Palanquin Dark";
     font-weight: bold;
     font-weight: 400;
+    padding-bottom: 5px;
 
     display: flex;
     justify-content: center;
@@ -375,21 +382,21 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    
+
 }
 
 button:hover {
     background-color: #f4f4f4;
 }
 
-.contact-section{
-    width:100%;
+.contact-section {
+    width: 100%;
 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    padding:60px 20px;
+    padding: 60px 20px;
 }
 
 .checkbox {
@@ -397,13 +404,13 @@ button:hover {
     padding-top: 14px;
 
     display: flex;
-    align-items: flex-start;
     gap: 8px;
 }
 
 .checkbox input {
-    width: 11px;
-    height: 11px;
+    width: 18px;
+    height: 28px;
+
 
     border: 1px solid #7b4f27;
     background-color: white;
@@ -412,16 +419,22 @@ button:hover {
 }
 
 .checkbox p {
-    padding: 0;
-
+    
+    margin-top: 30px;
     color: #6a4a2c;
-    font-family: "Palanquin Dark";
-    font-size: 10px;
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
 }
 
-.checkbox a{
-    color:#4ba9ce;
-    text-decoration:none;
+.checkbox a {
+    color: #4ba9ce;
+    text-decoration: none;
+}
+
+.agb {
+    
 }
 
 
@@ -478,6 +491,12 @@ button:hover {
     gap: 16px;
 }
 
+.footer-mob p {
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+}
+
 .footer-text {
     display: flex;
     flex-direction: column;
@@ -518,5 +537,3 @@ button:hover {
 .social-icons .youtube {
     width: 32px;
 }
-
-
