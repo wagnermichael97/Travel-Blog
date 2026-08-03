@@ -150,3 +150,52 @@ header img {
     font-size: 10px;
     color: #54370D;
 }
+
+.reisebericht {
+    width: 100%;
+    max-width: 375px;
+    margin: auto;
+    padding: 20px 16px;
+}
+
+.reisebericht p {
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.reisebericht h2 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.reisebild {
+    display: block;
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.reisebild-one {
+    height: 232px;
+    width: 345px;
+}
+
+.reisebild-two {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+    padding-top: 30px;
+}
+
+
+
+.reisebild-three {
+    width: 200px;
+    height: 150px;
+    display: flex;
+
+    padding-left: 10%;
+    margin-top: 40px;
+    margin-left: 50px
+}
