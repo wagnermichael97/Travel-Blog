@@ -560,12 +560,22 @@ header nav {
     position: absolute;
     top: -5%;
     left: -10%;
-    width: 60%;       
+    width: 45%;       
     z-index: 1;
     pointer-events: none;   
 }
 
+.slider-container {
 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+}
+
+.faq {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 }
 
 
