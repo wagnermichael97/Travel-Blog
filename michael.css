@@ -315,6 +315,10 @@ main p {
     color: #54370D;
 }
 
+.share-container p:hover {
+
+}
+
 .footer {
     position: fixed;
     right: 0;

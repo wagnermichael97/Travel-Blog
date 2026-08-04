@@ -66,21 +66,30 @@ header img {
 }
 
 .landing-page {
+    position: relative;
     height: 515px;
     background-image: url(./assets/img/blackground-image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    overflow: hidden;
     display: flex;
     padding-top: 121px;
     padding-left: 71px;
 }
 
+.yellow-shape {
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    width: 60%;       
+    z-index: 1;
+    pointer-events: none;   
+}
 
-
-.landing-page img {
-
+.globus {
+    z-index: 2;
+    position: absolute;
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -545,7 +554,79 @@ header nav {
     scroll-snap-type: x mandatory;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (min-width: 768px) {
     body {
         padding-bottom: 0;
     }
@@ -656,7 +737,7 @@ header nav {
     }
 }
 
-@media screen and (min-width: 1281px) {
+/*@media screen and (min-width: 1281px) {
     header,
     .landing-page,
     .footer-mob {
