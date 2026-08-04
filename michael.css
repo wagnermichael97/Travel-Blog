@@ -14,6 +14,15 @@
     src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
 }
 
+
+@font-face {
+  
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2'); 
+}
+
 @font-face {
     font-family: "Arima";
     src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
@@ -34,9 +43,6 @@
     font-weight: 600;
     src: url('../assets/fonts/arima-v7-latin-600.woff2') format('woff2');
 }
-
-
-
 
 * {
     margin: 0;
@@ -60,7 +66,6 @@ header img {
     width: 56px;
     height: 56px;
 }
-
 
 .landing {
     display: flex;
@@ -147,7 +152,6 @@ header img {
     border-radius: 30px;
 }
 
-
 .author-card img {
     width: 120px;
     height: 120px;
@@ -189,47 +193,91 @@ main p {
     padding: 0 16px;
 }
 
-.video-wrapper{
+.video-container{
     position:relative;
     width:100%;
     padding: 24px 16px;
 }
 
-.video-wrapper video{
+.video-container video{
     width:100%;
     border-radius:30px;
     
     object-fit: cover;
 }
 
-.play-btn{
-    position:absolute;
-    background: transparent;
-    top:50%;
-    left:50%;
+.list-container  {
+    font-family: "Palanquin";
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 120%;
+}
 
-    transform:translate(-50%,-50%);
+.list {
+    margin-top: 24px;
+}
 
-    width:80px;
-    height:80px;
+.protipps-section {
+    padding: 30px 16px 24px 16px;
+}
 
-    border:none;
-    border-radius:50%;
-
-    
-    cursor:pointer;
-
+.protipps-container {
+    display: flex;
     
 }
 
-/*.video-container {
-    padding: 24px 16px;
+.protipps {
+    background-color: rgba(75, 169, 206, 0.747);
+    border-radius: 10px;
+    rotate: -12deg;
+    padding: 10px 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.video-container video {
-    width: 100%;
-    max-width: 1000px;
+.protipps p {
+    font-weight: 700;
+    font-size: 28px;
+    color: #f6cb4f; 
+}
+
+.protipps img {
+    width: 40px;
+    object-fit: cover;
+    rotate: 5deg;
+}
+
+.protipps-list {
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 120%;
+    padding: 16px 24px ;
+    line-height: 120%;
+    background-color: #a6e6ffbe;
     border-radius: 30px;
-    display: block;
-    
 }
+
+.protipps-list ol {
+    padding: 10px 5px;
+}
+
+.share-section {
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #F1C953;
+    background-color: rgba(75, 169, 206, 0.747) ;
+    border-radius: 40px;
+    padding: 0px 24px;
+    width: fit-content;
+}
+
