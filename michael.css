@@ -253,7 +253,7 @@ main p {
     font-family: "Palanquin";
     font-weight: 400;
     line-height: 120%;
-    padding: 16px 24px ;
+    padding: 16px 24px;
     line-height: 120%;
     background-color: #a6e6ffbe;
     border-radius: 30px;
@@ -263,21 +263,152 @@ main p {
     padding: 10px 5px;
 }
 
-.share-section {
-    padding: 0px 16px;
+.share-container {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.share-container img[alt="Pfeil-Icon"] {
+    position: absolute;
+    left: 8px;
+    top: -6px;
+    width: 32px;
+    height: auto;
 }
 
 .share {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: 24px;
+
     color: #F1C953;
-    background-color: rgba(75, 169, 206, 0.747) ;
+    gap: 8px;
+    margin-top: 30px;
+    background-color: rgba(75, 169, 206, 0.747);
     border-radius: 40px;
-    padding: 0px 24px;
+    padding: 8px 16px;
     width: fit-content;
 }
 
+
+
+.share-section {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-bottom: 88px;
+}
+
+.share-text p {
+    font-family: "Arima";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #54370D;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 88px;
+    background-color: #f6cb4f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icons a {
+    width: 40px;
+    height: 40px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: contain;
+}
+
+.footer-mob {
+    width: 100%;
+
+    min-height: 134px;
+    margin: 0 auto;
+    padding: 30px 24px;
+
+    background-color: rgba(75, 169, 206, 0.747);
+    color: #ffffff;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer-mob p {
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.copyright-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.copyright-text img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.social-icons .youtube {
+    width: 32px;
+}
