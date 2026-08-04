@@ -732,3 +732,14 @@ header nav {
         gap: 60px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    header nav {
+        display: none !important;
+    }
+
+    header {
+        justify-content: center;
+        gap: 0;
+    }
+}
