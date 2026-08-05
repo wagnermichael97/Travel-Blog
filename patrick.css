@@ -1,41 +1,104 @@
 header {
-    gap: 32px;
+    width: 100%;
+    height: 80px;
+    padding: 0 50px;
+    background-color: rgba(75, 169, 206, 0.747);
 }
 
-header > a {
+.header-content {
     display: flex;
-    width: 56px;
-    height: 56px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+}
+
+.header-content > a {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
     text-decoration: none;
 }
 
-header > a img {
-    width: 56px;
-    height: 56px;
+.header-content > a img {
+    display: block;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
-header nav {
+.header-content nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 24px;
+    flex-wrap: nowrap;
+    gap: 40px;
 }
 
-header nav a {
+.header-content nav a {
+    display: block;
     color: #ffffff;
     font-family: "Arima", sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     text-decoration: none;
+    white-space: nowrap;
 }
 
-header nav a:hover {
+.header-content nav a:hover {
     color: #f6cb4f;
 }
 
-header a:focus-visible {
+.header-content a:focus-visible {
     outline: 2px solid #f6cb4f;
     outline-offset: 3px;
+}
+
+
+@media screen and (min-width: 1281px) {
+    header {
+        height: 128px;
+        padding: 0 146px;
+    }
+
+    .header-content {
+        gap: 102px;
+    }
+
+    .header-content nav {
+        gap: 72px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 70px;
+        padding: 0;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 0;
+    }
+
+    .header-content > a,
+    .header-content > a img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .header-content nav {
+        display: none;
+    }
 }
 
 
@@ -284,4 +347,46 @@ main {
     width: 22px;
     height: 22px;
     object-fit: contain;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 80px;
+        padding: 0 50px;
+        gap: 40px;
+    }
+
+    header nav,
+    header .nav-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 128px;
+        padding: 0 146px;
+        gap: 102px;
+    }
+
+    header nav,
+    header .nav-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 72px;
+    }
 }
