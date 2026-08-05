@@ -53,6 +53,10 @@ body {
     padding-bottom: 88px;
 }
 
+.nav-bar {
+    display: none;
+}
+
 header {
     background-color: rgba(75, 169, 206, 0.747);
     height: 70px;
@@ -424,6 +428,29 @@ main p {
         display: flex;
     }
 
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 50px;
+        gap: 40px;
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .nav-bar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: "Arima";
+        font-size: 24px;
+    }
+
     .author-card {
         width: 272px;
         height: 389px;
@@ -476,6 +503,161 @@ main p {
         width: 100%;
         align-items: center;
 
+
+    }
+
+    .footer-text {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+
+    .footer-mob p {
+        color: white;
+        font-size: 18px;
+        font-family: "Palanquin";
+
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+    }
+
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icons .youtube {
+        width: 44px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+    body {
+        padding-bottom: 0px;
+    }
+
+    .landing h2 {
+        font-size: 40px;
+    }
+
+    .landing h1 {
+        font-size: 64px;
+    }
+
+    .landing p {
+        font-size: 28px;
+    }
+
+    .blog-info {
+        margin: 40px 0;
+        gap: 32px;
+    }
+
+    landing-section {
+        display: flex;
+        padding: 0px 120px;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 50px;
+        gap: 40px;
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .nav-bar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: "Arima";
+        font-size: 24px;
+    }
+
+    .author-card {
+        width: 272px;
+        height: 389px;
+    }
+
+    .author-card h1 {
+        font-size: 18px;
+    }
+
+    .author-card h2 {
+        font-size: 18px;
+    }
+
+    .author-card-wrapper {
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+
+    .landing {
+        padding-top: 20px;
+    }
+
+    main p {
+        padding: 0px 120px;
+        font-size: 20px;
+        padding-top: 48px;
+    }
+
+    .video-container {
+        padding: 88px 248px;
+    }
+
+    .video-container video {
+        width: 931px;
+        height: 520px;
+    }
+
+    .under-video {
+        padding-top: 0px;
+    }
+    .list {
+        padding: 0px 120px;
+        font-size: 20px;
+    }
+
+    .protipps-section {
+        padding: 30px 150px 24px 150px;
+    }
+
+    .protipps-list {
+        font-size: 20px;
+    }
+
+    .share-section {
+        padding: 24px 500px;
+    }
+
+    .share-text p {
+        font-size: 24px;
+    }
+
+  
+    .footer {
+        display: none;
+    }
+
+    .footer-mob {
+        width: 100%;
+        align-items: center;
+        padding: 60px 120px;
 
     }
 
