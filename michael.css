@@ -16,11 +16,11 @@
 
 
 @font-face {
-  
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2'); 
+
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -193,20 +193,20 @@ main p {
     padding: 0 16px;
 }
 
-.video-container{
-    position:relative;
-    width:100%;
+.video-container {
+    position: relative;
+    width: 100%;
     padding: 24px 16px;
 }
 
-.video-container video{
-    width:100%;
-    border-radius:30px;
-    
+.video-container video {
+    width: 100%;
+    border-radius: 30px;
+
     object-fit: cover;
 }
 
-.list-container  {
+.list-container {
     font-family: "Palanquin";
     font-weight: 400;
     margin-top: 24px;
@@ -224,7 +224,7 @@ main p {
 
 .protipps-container {
     display: flex;
-    
+
 }
 
 .protipps {
@@ -240,7 +240,7 @@ main p {
 .protipps p {
     font-weight: 700;
     font-size: 28px;
-    color: #f6cb4f; 
+    color: #f6cb4f;
 }
 
 .protipps img {
@@ -315,9 +315,7 @@ main p {
     color: #54370D;
 }
 
-.share-container p:hover {
-
-}
+.share-container p:hover {}
 
 .footer {
     position: fixed;
@@ -422,13 +420,31 @@ main p {
         padding-bottom: 0px;
     }
 
+    landing-section {
+        display: flex;
+    }
+
+    .author-card {
+        width: 272px;
+        height: 389px;
+    }
+
+    .author-card-wrapper {
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+
+    .landing {
+        padding-top: 20px;
+    }
+
     main p {
         padding: 0px 40px;
         font-size: 20px;
     }
 
     .video-container {
-        padding: 24px 80px;
+        padding: 45px 150px;
     }
 
     .list {
@@ -445,7 +461,7 @@ main p {
     }
 
     .share-section {
-    padding: 24px 200px;
+        padding: 24px 200px;
     }
 
     .share-text p {
@@ -456,10 +472,10 @@ main p {
         display: none;
     }
 
-     .footer-mob {
+    .footer-mob {
         width: 100%;
         align-items: center;
-        
+
 
     }
 
