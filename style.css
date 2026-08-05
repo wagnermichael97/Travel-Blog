@@ -551,14 +551,26 @@ header nav {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 
     .yellow-shape {
-        position: absolute;
-        top: -5%;
-        left: -8%;
-        width: 35%;
-        height: 75%;
-        z-index: 1;
-        pointer-events: none;
+        display: none;
     }
+
+    .yellow-shape-responsive {
+        display: block;
+        position: absolute;
+        top: -0%;
+        left: -1%;
+        width: 50%;
+        height: 110%;
+        pointer-events: none;
+
+    }
+
+    .landing-page {
+        padding-top: 200px;
+        padding-left: 200px;
+
+    }
+
 
     header {
         height: 80px;
@@ -587,9 +599,7 @@ header nav {
         font-size: 24px;
     }
 
-    .responsive-landing {
-        display: none;
-    }
+
 
     .footer {
         position: unset;
@@ -737,6 +747,7 @@ header nav {
 @media screen and (min-width: 1281px) {
 
 
+    
 
     .yellow-shape {
         display: none;
@@ -761,6 +772,7 @@ header nav {
 
     .landing-page {
         overflow: visible;
+
     }
 
     .responsive-landing {
