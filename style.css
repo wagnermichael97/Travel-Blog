@@ -600,7 +600,7 @@ header nav {
 
     .footer-mob {
         width: 100%;
-        flex-direction: ;
+        
     }
 
     .footer-text {
@@ -714,15 +714,6 @@ header nav {
         padding-left: 40px;
         padding-right: 40px;
     }
-<<<<<<< HEAD
-
-    body {
-        padding-bottom: 0px;
-    }
-
-
-=======
->>>>>>> 5a5f7960a31a932e2cfb0c823a28c7e53bf8706f
 }
 
 
