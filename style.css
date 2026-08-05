@@ -40,6 +40,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding-bottom: 80px;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -60,7 +64,7 @@ header img {
 }
 
 
-.nav-bar {}
+
 
 .landing-page {
     position: relative;
@@ -596,13 +600,14 @@ header nav {
 
     .footer-mob {
         width: 100%;
-
+        flex-direction: ;
     }
 
     .footer-text {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 50px;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 40px;
     }
 
     .footer-mob p {
@@ -627,7 +632,7 @@ header nav {
         width: 34px;
     }
 
-    .faq-container{
+    .faq-container {
         padding-left: 20px;
         padding-right: 20px;
         max-width: 1280vh;
@@ -635,6 +640,7 @@ header nav {
 
     .contact-section {
         padding: 70px 70px 80px;
+
     }
 
     .kontakt_head {
@@ -654,42 +660,42 @@ header nav {
     }
 
     .kontakt {
-        max-width: 50%;
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: 100%;
+        max-width: 900px;
     }
 
     .contact-row {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        gap: 30px;
+        gap: 40px;
     }
 
-    .contact-row input {
-        width: 48%;
+    .input-box {
+        width: 50%;
+    }
+
+    .input-box input {
+        width: 100%;
     }
 
     .kontakt textarea {
         width: 100%;
+        margin-top: 35px;
     }
 
     .checkbox {
         justify-content: center;
         align-items: center;
-        padding-top: 12px;
+        margin-top: 20px;
     }
 
     .checkbox input {
         width: 15px;
         height: 15px;
-        padding: 0;
+
     }
 
     .checkbox p {
-        padding: 0;
         font-size: 12px;
     }
 
@@ -699,15 +705,16 @@ header nav {
         margin-top: 38px;
     }
 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 80px;
-}
+    .faq {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-.faq {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    body {
+        padding-bottom: 0px;
+    }
+
+
 }
 
 
