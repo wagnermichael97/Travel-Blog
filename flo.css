@@ -52,12 +52,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vh;
 }
 
 header img {
     width: 56px;
     height: 56px;
 }
+
+
 
 .info-section {
     display: flex;
@@ -320,12 +323,12 @@ header img {
 
 .share-arrow {
     display: flex;
+    padding-left: 300px;
 
 }
 
 .share-arrow img {
     width: 30px;
-    transform: rotate(-20deg);
 }
 
 .footer {
@@ -425,91 +428,486 @@ header img {
     width: 32px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    body {
+        padding-bottom: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        padding: 0 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-nav {
+        display: none;
+        gap: 30px;
+    }
+
+    .header-nav a {
+        text-decoration: none;
+        color: white;
+        font-family: "Palanquin Dark";
+        font-size: 15px;
+    }
+
+    .top-content {
+        width: 100%;
+        max-width: 1180px;
+
+        margin: 40px auto;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 50px;
+    }
 
     .info-section {
-        max-width: 700px;
-        margin: 30px auto;
-        padding: 0 30px;
+        width: 70%;
+        max-width: none;
+        padding: 0;
+    }
+
+    .krakaow {
+        font-size: 26px;
+    }
+
+    .krakow-info h1 {
+        font-size: 42px;
+    }
+
+    .krakow-info p {
+        font-size: 18px;
+    }
+
+    .info {
+        font-size: 14px;
+        gap: 20px 30px;
     }
 
     .author-card {
-        width: 500px;
+        width: 280px;
+        padding: 20px;
+        flex-shrink: 0;
+    }
+
+    .author-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .author-card h2 {
+        font-size: 24px;
+    }
+
+    .author-job {
+        font-size: 18px;
+    }
+
+    .author-text {
+        font-size: 12px;
     }
 
     .reisebericht {
-        max-width: 700px;
-        padding: 30px;
+
+        width: 100%;
+        max-width: 900px;
+
+        margin: auto;
+
+        padding: 40px;
     }
 
     .reisebericht h2 {
-        font-size: 24px;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .reisebericht p {
         font-size: 18px;
+        margin-bottom: 35px;
     }
 
-    .reisebild-one {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        margin: 0 auto 20px;
-    }
+    .reisebild-one,
+    .reisebild-two,
+    .reisebild-three {
 
-    .reisebild-two {
+        display: block;
+
         width: 100%;
-        max-width: 500px;
+        max-width: 700px;
+
         height: auto;
-        margin: 0 auto 20px;
+
+        margin: auto 35px;
+
         padding: 0;
     }
 
     .reisebild-three {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        margin: 20px auto;
-        padding: 0;
+        max-width: 500px;
     }
 
     .share-section {
-        max-width: 700px;
-        margin: 40px auto;
+
+        width: 100%;
+        max-width: 900px;
+
+        margin: 50px auto;
+
+        text-align: center;
     }
 
-    .footer-mob {
-        padding: 30px 40px;
+    .share-title {
+        font-size: 18px;
+    }
+
+    .share-button {
+        margin: 35px auto;
+    }
+
+    .share-arrow {
+
+        display: flex;
+        justify-content: center;
+
+        padding-left: 0;
+
+        transform: translateX(-90px);
+    }
+
+    .share-arrow img {
+        width: 35px;
     }
 
     .footer {
         display: none;
     }
+
+    .footer-mob {
+
+        width: 100%;
+
+        padding: 30px 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-text {
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 40px;
+    }
+
+    .footer-text p {
+        font-size: 14px;
+    }
+
+    .social-icons-one img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .social-icons-one .youtube {
+        width: 30px;
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
 
-    .info-section,
-    .reisebericht,
-    .share-section,
-    .footer-mob {
-        max-width: 1000px;
-        margin: auto;
+    body {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+
+        margin-left: 35px;
+        gap: 40px;
+    }
+
+    .header-nav a {
+        text-decoration: none;
+        color: white;
+        font-family: "Palanquin Dark";
+        font-size: 18px;
+    }
+
+    .top-content {
+        width: 100%;
+        max-width: 1280px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        margin-bottom: 50px;
+
+        padding-left: 70px;
+        padding-right: 70px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 65px;
+    }
+
+    .info-section {
+        width: calc(100% - 370px);
+        max-width: none;
+
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .krakaow {
+        font-size: 28px;
+    }
+
+    .krakow-info h1 {
+        font-size: 50px;
+    }
+
+    .krakow-info p {
+        font-size: 20px;
+    }
+
+    .info {
+        margin-top: 25px;
+        font-size: 15px;
+        gap: 18px 30px;
+    }
+
+    .datum img,
+    .lesezeit img,
+    .aufrufe img,
+    .geteilt img {
+        width: 18px;
+        height: 18px;
     }
 
     .author-card {
-        width: 600px;
+        width: 330px;
+        padding: 25px 20px;
+        flex-shrink: 0;
+    }
+
+    .author-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .author-card h2 {
+        margin-top: 12px;
+        font-size: 28px;
+    }
+
+    .author-job {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .author-text {
+        margin-top: 14px;
+        font-size: 14px;
     }
 
     .reisebericht {
-        padding: 40px;
+        width: 100%;
+        max-width: 1100px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
 
     .reisebericht h2 {
-        font-size: 28px;
+        font-size: 30px;
+        text-align: center;
+
+        margin-bottom: 22px;
     }
 
     .reisebericht p {
         font-size: 20px;
+        margin-bottom: 40px;
     }
+
+    .reisebild-one {
+        display: block;
+
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+
+    .reisebild-two {
+        display: block;
+
+        width: 100%;
+        max-width: 750px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+
+    .reisebild-three {
+        display: block;
+
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+
+    .share-section {
+        width: 100%;
+        max-width: 1100px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        margin-bottom: 55px;
+
+        padding-left: 60px;
+        padding-right: 60px;
+
+        text-align: center;
+    }
+
+    .share-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .share-arrow {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        transform: translateX(-110px);
+    }
+
+    .share-arrow img {
+        width: 40px;
+    }
+
+    .share-button {
+        width: 140px;
+        height: 48px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .share-button span {
+        font-size: 22px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-mob {
+        width: 100%;
+        min-height: 110px;
+
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 55px;
+        flex-direction: row-reverse;
+    }
+
+    .footer-text p {
+        font-size: 15px;
+    }
+
+    .copyright-text img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .social-icons-one {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .social-icons-one img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons-one .youtube {
+        width: 32px;
+    }
+
 }
