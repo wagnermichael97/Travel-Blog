@@ -82,9 +82,9 @@ header img {
     position: absolute;
     top: -5%;
     left: -10%;
-    width: 60%;       
+    width: 60%;
     z-index: 1;
-    pointer-events: none;   
+    pointer-events: none;
 }
 
 .globus {
@@ -282,7 +282,7 @@ details p {
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
-    
+
     font-weight: 400;
     font-family: "Palanquin";
 }
@@ -428,7 +428,7 @@ button:hover {
 }
 
 .checkbox p {
-    
+
     margin-top: 30px;
     color: #6a4a2c;
     font-family: "Palanquin";
@@ -557,25 +557,25 @@ header nav {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 
     .yellow-shape {
-    position: absolute;
-    top: -5%;
-    left: -10%;
-    width: 45%;       
-    z-index: 1;
-    pointer-events: none;   
-}
+        position: absolute;
+        top: -5%;
+        left: -10%;
+        width: 45%;
+        z-index: 1;. 
+        pointer-events: none;
+    }
 
-.slider-container {
+    .slider-container {
 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 80px;
-}
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 80px;
+    }
 
-.faq {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    .faq {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 
