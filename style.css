@@ -600,7 +600,8 @@ header nav {
 
     .footer-mob {
         width: 100%;
-        flex-direction: ;
+        align-items: center;
+        padding-left: 120px;
     }
 
     .footer-text {
@@ -614,13 +615,14 @@ header nav {
         color: white;
         font-size: 15px;
         font-family: "Palanquin";
-
+        
     }
 
     .social-icons {
         display: flex;
         justify-content: space-between;
         gap: 16px;
+        padding-right: 124px;
     }
 
     .social-icons img {
@@ -704,6 +706,7 @@ header nav {
         height: 38px;
         margin-top: 38px;
     }
+
     .slider-container {
         padding-left: 40px;
         padding-right: 40px;
@@ -714,15 +717,12 @@ header nav {
         padding-left: 40px;
         padding-right: 40px;
     }
-<<<<<<< HEAD
 
     body {
         padding-bottom: 0px;
     }
 
 
-=======
->>>>>>> 5a5f7960a31a932e2cfb0c823a28c7e53bf8706f
 }
 
 
