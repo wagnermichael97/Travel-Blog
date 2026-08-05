@@ -415,3 +415,81 @@ main p {
 .social-icons .youtube {
     width: 32px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    body {
+        padding-bottom: 0px;
+    }
+
+    main p {
+        padding: 0px 40px;
+        font-size: 20px;
+    }
+
+    .video-container {
+        padding: 24px 80px;
+    }
+
+    .list {
+        padding: 0px 40px;
+        font-size: 20px;
+    }
+
+    .protipps-section {
+        padding: 30px 60px 24px 60px;
+    }
+
+    .protipps-list {
+        font-size: 20px;
+    }
+
+    .share-section {
+    padding: 24px 200px;
+    }
+
+    .share-text p {
+        font-size: 20px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+     .footer-mob {
+        width: 100%;
+        align-items: center;
+        
+
+    }
+
+    .footer-text {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+
+    .footer-mob p {
+        color: white;
+        font-size: 18px;
+        font-family: "Palanquin";
+
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+    }
+
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icons .youtube {
+        width: 44px;
+    }
+}
