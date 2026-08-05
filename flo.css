@@ -49,10 +49,15 @@ html {
 header {
     background-color: rgba(75, 169, 206, 0.747);
     height: 70px;
+    padding: 32px max(50% - 720px, 120px);
+    width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
 }
 
 header img {
@@ -60,7 +65,13 @@ header img {
     height: 56px;
 }
 
-
+.header-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Palanquin Dark";
+    font-size: 15px;
+    display: none;
+}
 
 .info-section {
     display: flex;
@@ -168,6 +179,10 @@ header img {
     max-width: 375px;
     margin: auto;
     padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .reisebericht p {
@@ -182,10 +197,11 @@ header img {
 }
 
 .reisebild {
-    display: block;
+    display: flex;
     width: 100%;
     border-radius: 18px;
     margin-bottom: 20px;
+
 }
 
 .reisebild-one {
@@ -201,8 +217,7 @@ header img {
 .reisebild-two {
     display: flex;
     align-items: center;
-    padding-left: 25%;
-    padding-top: 30px;
+
     box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.08),
         0 16px 40px rgba(0, 0, 0, 0.06);
@@ -215,7 +230,7 @@ header img {
     height: 150px;
     display: flex;
     margin-bottom: 15px;
-    padding-left: 10%;
+
     margin-top: 40px;
     margin-left: 50px;
     box-shadow:
@@ -323,8 +338,8 @@ header img {
 
 .share-arrow {
     display: flex;
-    padding-left: 300px;
-
+    position: absolute;
+    left: 250px;
 }
 
 .share-arrow img {
@@ -434,7 +449,7 @@ header img {
         padding-bottom: 0;
     }
 
-       header{ 
+    header {
         width: 100%;
         height: 90px;
         display: flex;
@@ -443,19 +458,18 @@ header img {
         padding-left: 30px;
         padding-right: 30px;
         gap: 30px
-        }      
+    }
 
     header img {
         width: 60px;
         height: 60px;
     }
 
-    header-nav {
+    /* header-nav {
         display: none;
+    } */
 
-    }
-
-    header-nav a {
+    .header-nav a {
         text-decoration: none;
         color: white;
         font-family: "Palanquin Dark";
@@ -648,7 +662,6 @@ header img {
         padding: 0 40px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     header img {
@@ -937,8 +950,8 @@ header img {
         width: 100%;
         padding-bottom: 0;
     }
-   
-       header{ 
+
+    header {
         width: 100%;
         height: 90px;
         display: flex;
@@ -946,7 +959,7 @@ header img {
         justify-content: flex-start;
         padding-left: 30px;
         padding-right: 30px;
-        }
+    }
 
     header img {
         width: 70px;
@@ -1161,7 +1174,7 @@ header img {
         display: none;
     }
 
-     .footer-text {
+    .footer-text {
         display: flex;
         flex-direction: row;
         align-items: center;
