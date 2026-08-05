@@ -620,7 +620,7 @@ header nav {
         display: flex;
         justify-content: space-between;
         gap: 16px;
-        padding-right: 124px;
+        
     }
 
     .social-icons img {
