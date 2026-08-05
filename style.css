@@ -602,6 +602,7 @@ header nav {
         width: 100%;
         align-items: center;
         padding-left: 120px;
+        
     }
 
     .footer-text {
@@ -718,11 +719,9 @@ header nav {
         padding-right: 40px;
     }
 
-    body {
+    body { 
         padding-bottom: 0px;
     }
-
-
 }
 
 
