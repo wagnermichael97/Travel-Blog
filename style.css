@@ -444,10 +444,6 @@ button:hover {
 }
 
 
-
-
-
-
 .footer {
     position: fixed;
     right: 0;
@@ -560,8 +556,9 @@ header nav {
     .yellow-shape {
         position: absolute;
         top: -5%;
-        left: -10%;
-        width: 60%;
+        left: -8%;
+        width: 35%;
+        height: 75%;
         z-index: 1;
         pointer-events: none;
     }
@@ -600,7 +597,9 @@ header nav {
 
     .footer-mob {
         width: 100%;
-        
+        align-items: center;
+        padding: 0px 120px;
+
     }
 
     .footer-text {
@@ -612,7 +611,7 @@ header nav {
 
     .footer-mob p {
         color: white;
-        font-size: 15px;
+        font-size: 18px;
         font-family: "Palanquin";
 
     }
@@ -645,7 +644,6 @@ header nav {
 
     .kontakt_head {
         padding-top: 0;
-        padding-bottom: 15px;
         font-size: 40px;
     }
 
@@ -664,6 +662,10 @@ header nav {
         max-width: 900px;
     }
 
+    .kontakt input, .kontakt textarea {
+        margin-top: 10px;
+    }
+   
     .contact-row {
         display: flex;
         justify-content: space-between;
@@ -686,7 +688,8 @@ header nav {
     .checkbox {
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        padding-top: 0px;
+        
     }
 
     .checkbox input {
@@ -697,6 +700,8 @@ header nav {
 
     .checkbox p {
         font-size: 12px;
+        margin-top: 9px;
+        
     }
 
     button {
@@ -708,6 +713,10 @@ header nav {
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 80px;
+    }
+
+    .slider-wrapper {
+        max-width: 100%;
     }
 
     .faq {
