@@ -58,15 +58,24 @@ body {
 }
 
 header {
-    background-color: rgba(75, 169, 206, 0.747);
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 0;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(75, 169, 206, 0.747);
+    z-index: -1;
 }
 
 header img {
-
     width: 56px;
     height: 56px;
 }
@@ -78,8 +87,6 @@ header img {
     padding-right: 16px;
 
 }
-
-
 
 .landing h2 {
     font-family: "Palanquin";
@@ -326,7 +333,7 @@ main p {
     color: #54370D;
 }
 
-.share-container p:hover {}
+
 
 .footer {
     position: fixed;
@@ -369,23 +376,25 @@ main p {
 
 .footer-mob {
     width: 100%;
-
     min-height: 134px;
-    padding: 30px 24px;
-
-    background-color: rgba(75, 169, 206, 0.747);
     color: #ffffff;
+    position: relative;
+    z-index: 0;
 
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
+    padding: 30px 24px;
+
 }
 
-.footer-mob p {
-    font-family: "Palanquin";
-    font-style: normal;
-    font-weight: 400;
+.footer-mob::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(75, 169, 206, 0.747);
+    z-index: -1;
 }
 
 .footer-text {
@@ -398,19 +407,6 @@ main p {
     margin: 0;
     font-size: 16px;
     line-height: 1.2;
-}
-
-.copyright-text {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    white-space: nowrap;
-}
-
-.copyright-text img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
 }
 
 .social-icons {
@@ -428,6 +424,21 @@ main p {
 .social-icons .youtube {
     width: 32px;
 }
+
+.copyright-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.copyright-text img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 
@@ -554,6 +565,12 @@ main p {
         padding-bottom: 0px;
     }
 
+    .landing {
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .landing h2 {
         font-size: 40px;
     }
@@ -569,6 +586,8 @@ main p {
     .blog-info {
         margin: 40px 0;
         gap: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     landing-section {
@@ -586,13 +605,22 @@ main p {
         align-items: center;
         padding: 0 50px;
         gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
 
+    header::before {
+        left: 50%;
+        right: auto;
+        width: 100vw;
+        transform: translateX(-50%);
     }
 
     .nav-bar {
         display: flex;
         gap: 40px;
-       
+        align-items: center;
     }
 
     .nav-bar a {
@@ -601,7 +629,6 @@ main p {
         text-decoration: none;
         font-family: "Arima";
         font-size: 24px;
-
     }
 
     .author-card {
@@ -620,10 +647,6 @@ main p {
     .author-card-wrapper {
         padding-top: 40px;
         padding-right: 40px;
-    }
-
-    .landing {
-        padding-top: 20px;
     }
 
     main p {
@@ -705,12 +728,18 @@ main p {
     }
 
     .footer-mob {
-        width: 100%;
         align-items: center;
         padding: 60px 120px;
         margin-left: auto;
         margin-right: auto;
         max-width: 1440px;
+    }
+
+    .footer-mob::before {
+        left: 50%;
+        right: auto;
+        width: 100vw;
+        transform: translateX(-50%);
     }
 
     .footer-text {
