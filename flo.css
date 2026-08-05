@@ -49,10 +49,15 @@ html {
 header {
     background-color: rgba(75, 169, 206, 0.747);
     height: 70px;
+    padding: 32px max(50% - 720px, 120px);
+    width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
 }
 
 header img {
@@ -60,7 +65,13 @@ header img {
     height: 56px;
 }
 
-
+.header-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Palanquin Dark";
+    font-size: 15px;
+    display: none;
+}
 
 .info-section {
     display: flex;
@@ -168,6 +179,10 @@ header img {
     max-width: 375px;
     margin: auto;
     padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .reisebericht p {
@@ -182,10 +197,11 @@ header img {
 }
 
 .reisebild {
-    display: block;
+    display: flex;
     width: 100%;
     border-radius: 18px;
     margin-bottom: 20px;
+
 }
 
 .reisebild-one {
@@ -201,8 +217,7 @@ header img {
 .reisebild-two {
     display: flex;
     align-items: center;
-    padding-left: 25%;
-    padding-top: 30px;
+
     box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.08),
         0 16px 40px rgba(0, 0, 0, 0.06);
@@ -215,7 +230,7 @@ header img {
     height: 150px;
     display: flex;
     margin-bottom: 15px;
-    padding-left: 10%;
+
     margin-top: 40px;
     margin-left: 50px;
     box-shadow:
@@ -323,8 +338,8 @@ header img {
 
 .share-arrow {
     display: flex;
-    padding-left: 300px;
-
+    position: absolute;
+    left: 250px;
 }
 
 .share-arrow img {
@@ -436,12 +451,13 @@ header img {
 
     header {
         width: 100%;
-        height: 70px;
-        padding: 0 40px;
-
+        height: 90px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px
     }
 
     header img {
@@ -449,16 +465,16 @@ header img {
         height: 60px;
     }
 
-    .header-nav {
+    /* header-nav {
         display: none;
-        gap: 30px;
-    }
+    } */
 
     .header-nav a {
         text-decoration: none;
         color: white;
         font-family: "Palanquin Dark";
         font-size: 15px;
+        display: none;
     }
 
     .top-content {
@@ -642,14 +658,10 @@ header img {
 
     header {
         width: 100%;
-        height: 90px;
-
+        height: 70px;
+        padding: 0 40px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     header img {
@@ -728,7 +740,7 @@ header img {
 
     .author-card {
         width: 330px;
-        padding: 25px 20px;
+        padding: 30px 20px;
         flex-shrink: 0;
     }
 
@@ -910,4 +922,287 @@ header img {
         width: 32px;
     }
 
+}
+
+@media screen and (min-width: 1441px) {
+
+    .top-content,
+    .reisebericht,
+    .share-section,
+    .footer-mob {
+        width: 100%;
+        max-width: 1440px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-content,
+    .page-content,
+    .footer-mob {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    body {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+
+        margin-left: 35px;
+        gap: 40px;
+    }
+
+    .header-nav a {
+        text-decoration: none;
+        color: white;
+        font-family: "Palanquin Dark";
+        font-size: 18px;
+    }
+
+    .top-content {
+        width: 100%;
+        max-width: 1280px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        margin-bottom: 50px;
+
+        padding-left: 70px;
+        padding-right: 70px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 65px;
+    }
+
+    .info-section {
+        width: calc(100% - 370px);
+        max-width: none;
+
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .krakaow {
+        font-size: 28px;
+    }
+
+    .krakow-info h1 {
+        font-size: 50px;
+    }
+
+    .krakow-info p {
+        font-size: 20px;
+    }
+
+    .info {
+        margin-top: 25px;
+        font-size: 15px;
+        gap: 18px 30px;
+    }
+
+    .datum img,
+    .lesezeit img,
+    .aufrufe img,
+    .geteilt img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .author-card {
+        width: 330px;
+        padding: 30px 20px;
+        flex-shrink: 0;
+    }
+
+    .author-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .author-card h2 {
+        margin-top: 12px;
+        font-size: 28px;
+    }
+
+    .author-job {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .author-text {
+        margin-top: 14px;
+        font-size: 14px;
+    }
+
+    .reisebericht {
+        width: 100%;
+        max-width: 1100px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .reisebericht h2 {
+        font-size: 30px;
+        text-align: center;
+
+        margin-bottom: 22px;
+    }
+
+    .reisebericht p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .reisebild-one {
+        display: block;
+
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+
+    .reisebild-two {
+        display: block;
+
+        width: 100%;
+        max-width: 750px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+
+    .reisebild-three {
+        display: block;
+
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+
+    .share-section {
+        width: 100%;
+        max-width: 1100px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        margin-bottom: 55px;
+
+        padding-left: 60px;
+        padding-right: 60px;
+
+        text-align: center;
+    }
+
+    .share-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .share-arrow {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        transform: translateX(-110px);
+    }
+
+    .share-arrow img {
+        width: 40px;
+    }
+
+    .share-button {
+        width: 140px;
+        height: 48px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .share-button span {
+        font-size: 22px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .footer-text p {
+        font-size: 18px;
+    }
+
+    .copyright-text img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .social-icons-one {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .social-icons-one img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icons-one .youtube {
+        width: 38px;
+        height: auto;
+    }
 }
