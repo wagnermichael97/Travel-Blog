@@ -613,13 +613,14 @@ header nav {
         color: white;
         font-size: 18px;
         font-family: "Palanquin";
-
+        
     }
 
     .social-icons {
         display: flex;
         justify-content: space-between;
         gap: 16px;
+        padding-right: 124px;
     }
 
     .social-icons img {
@@ -709,6 +710,7 @@ header nav {
         height: 38px;
         margin-top: 38px;
     }
+
     .slider-container {
         padding-left: 40px;
         padding-right: 40px;
