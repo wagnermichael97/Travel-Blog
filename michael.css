@@ -16,11 +16,11 @@
 
 
 @font-face {
-  
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2'); 
+
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -53,6 +53,10 @@ body {
     padding-bottom: 88px;
 }
 
+.nav-bar {
+    display: none;
+}
+
 header {
     background-color: rgba(75, 169, 206, 0.747);
     height: 70px;
@@ -72,7 +76,10 @@ header img {
     flex-direction: column;
     padding-left: 16px;
     padding-right: 16px;
+
 }
+
+
 
 .landing h2 {
     font-family: "Palanquin";
@@ -110,6 +117,9 @@ header img {
     margin: 24px 0;
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-item {
@@ -191,22 +201,25 @@ main p {
     font-size: 16px;
     line-height: 120%;
     padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
 }
 
-.video-container{
-    position:relative;
-    width:100%;
+.video-container {
+    position: relative;
+    width: 100%;
     padding: 24px 16px;
 }
 
-.video-container video{
-    width:100%;
-    border-radius:30px;
-    
+.video-container video {
+    width: 100%;
+    border-radius: 30px;
+
     object-fit: cover;
 }
 
-.list-container  {
+.list-container {
     font-family: "Palanquin";
     font-weight: 400;
     margin-top: 24px;
@@ -224,7 +237,7 @@ main p {
 
 .protipps-container {
     display: flex;
-    
+
 }
 
 .protipps {
@@ -240,7 +253,7 @@ main p {
 .protipps p {
     font-weight: 700;
     font-size: 28px;
-    color: #f6cb4f; 
+    color: #f6cb4f;
 }
 
 .protipps img {
@@ -295,8 +308,6 @@ main p {
     width: fit-content;
 }
 
-
-
 .share-section {
     padding: 24px 16px;
     display: flex;
@@ -315,9 +326,7 @@ main p {
     color: #54370D;
 }
 
-.share-container p:hover {
-
-}
+.share-container p:hover {}
 
 .footer {
     position: fixed;
@@ -352,6 +361,10 @@ main p {
     height: 40px;
     display: block;
     object-fit: contain;
+}
+
+.pfeil-groß {
+    display: none;
 }
 
 .footer-mob {
@@ -422,13 +435,54 @@ main p {
         padding-bottom: 0px;
     }
 
+    landing-section {
+        display: flex;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 50px;
+        gap: 40px;
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .nav-bar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: "Arima";
+        font-size: 24px;
+    }
+
+    .author-card {
+        width: 272px;
+        height: 389px;
+    }
+
+    .author-card-wrapper {
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+
+    .landing {
+        padding-top: 20px;
+    }
+
     main p {
         padding: 0px 40px;
         font-size: 20px;
     }
 
     .video-container {
-        padding: 24px 80px;
+        padding: 45px 150px;
     }
 
     .list {
@@ -445,7 +499,7 @@ main p {
     }
 
     .share-section {
-    padding: 24px 200px;
+        padding: 24px 200px;
     }
 
     .share-text p {
@@ -456,11 +510,207 @@ main p {
         display: none;
     }
 
-     .footer-mob {
+    .footer-mob {
         width: 100%;
         align-items: center;
-        
 
+
+    }
+
+    .footer-text {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+
+    .footer-mob p {
+        color: white;
+        font-size: 18px;
+        font-family: "Palanquin";
+
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+    }
+
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icons .youtube {
+        width: 44px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+    body {
+        padding-bottom: 0px;
+    }
+
+    .landing h2 {
+        font-size: 40px;
+    }
+
+    .landing h1 {
+        font-size: 64px;
+    }
+
+    .landing p {
+        font-size: 28px;
+    }
+
+    .blog-info {
+        margin: 40px 0;
+        gap: 32px;
+    }
+
+    landing-section {
+        display: flex;
+        padding: 0px 120px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 50px;
+        gap: 40px;
+
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 40px;
+       
+    }
+
+    .nav-bar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: "Arima";
+        font-size: 24px;
+
+    }
+
+    .author-card {
+        width: 272px;
+        height: 389px;
+    }
+
+    .author-card h1 {
+        font-size: 18px;
+    }
+
+    .author-card h2 {
+        font-size: 18px;
+    }
+
+    .author-card-wrapper {
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+
+    .landing {
+        padding-top: 20px;
+    }
+
+    main p {
+        padding: 0px 120px;
+        font-size: 20px;
+        padding-top: 48px;
+    }
+
+    .video-container {
+        padding: 88px 248px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+    .video-container video {
+        width: 931px;
+        height: 520px;
+    }
+
+    .under-video {
+        padding-top: 0px;
+    }
+
+    .list {
+        padding: 0px 120px;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+    .protipps-section {
+        padding: 30px 150px 24px 150px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+    .protipps-list {
+        font-size: 20px;
+    }
+
+    .share-section {
+        padding: 24px 500px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+    .share-text p {
+        font-size: 24px;
+    }
+
+    .share {
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .pfeil-klein {
+        display: none
+    }
+
+    .pfeil-groß {
+        display: block;
+
+    }
+
+    .share-container img[alt="Pfeil-Icon"] {
+        position: absolute;
+        left: 21px;
+        top: -32px;
+        width: 105px;
+        height: auto;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-mob {
+        width: 100%;
+        align-items: center;
+        padding: 60px 120px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     .footer-text {
