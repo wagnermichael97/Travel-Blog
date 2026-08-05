@@ -76,7 +76,10 @@ header img {
     flex-direction: column;
     padding-left: 16px;
     padding-right: 16px;
+
 }
+
+
 
 .landing h2 {
     font-family: "Palanquin";
@@ -114,6 +117,9 @@ header img {
     margin: 24px 0;
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-item {
@@ -195,6 +201,9 @@ main p {
     font-size: 16px;
     line-height: 120%;
     padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
 }
 
 .video-container {
@@ -299,8 +308,6 @@ main p {
     width: fit-content;
 }
 
-
-
 .share-section {
     padding: 24px 16px;
     display: flex;
@@ -354,6 +361,10 @@ main p {
     height: 40px;
     display: block;
     object-fit: contain;
+}
+
+.pfeil-groß {
+    display: none;
 }
 
 .footer-mob {
@@ -563,6 +574,9 @@ main p {
     landing-section {
         display: flex;
         padding: 0px 120px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     header {
@@ -572,12 +586,13 @@ main p {
         align-items: center;
         padding: 0 50px;
         gap: 40px;
+
     }
 
     .nav-bar {
         display: flex;
         gap: 40px;
-
+       
     }
 
     .nav-bar a {
@@ -586,6 +601,7 @@ main p {
         text-decoration: none;
         font-family: "Arima";
         font-size: 24px;
+
     }
 
     .author-card {
@@ -618,6 +634,9 @@ main p {
 
     .video-container {
         padding: 88px 248px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     .video-container video {
@@ -628,13 +647,20 @@ main p {
     .under-video {
         padding-top: 0px;
     }
+
     .list {
         padding: 0px 120px;
         font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     .protipps-section {
         padding: 30px 150px 24px 150px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     .protipps-list {
@@ -643,13 +669,37 @@ main p {
 
     .share-section {
         padding: 24px 500px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     .share-text p {
         font-size: 24px;
     }
 
-  
+    .share {
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .pfeil-klein {
+        display: none
+    }
+
+    .pfeil-groß {
+        display: block;
+
+    }
+
+    .share-container img[alt="Pfeil-Icon"] {
+        position: absolute;
+        left: 21px;
+        top: -32px;
+        width: 105px;
+        height: auto;
+    }
+
     .footer {
         display: none;
     }
@@ -658,7 +708,9 @@ main p {
         width: 100%;
         align-items: center;
         padding: 60px 120px;
-
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
     }
 
     .footer-text {
