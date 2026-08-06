@@ -297,7 +297,7 @@ header img {
 .share-button {
     width: 140px;
     height: 48px;
-    background: #59B28C;
+    background-color: rgba(75, 169, 206, 0.747);
     border-radius: 30px;
 
     display: flex;
@@ -421,6 +421,7 @@ header img {
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
+    
 }
 
 .footer-mob p {
@@ -1330,3 +1331,10 @@ header img {
         height: auto;
     }
 }
+
+.footer-mob a {
+        color: white;
+        font-size: 18px;
+        font-family: "Palanquin";
+        text-decoration: none;
+    }

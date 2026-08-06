@@ -936,11 +936,10 @@ header nav {
         gap: 40px;
     }
 
-    .footer-mob a {
+    .footer-mob p {
         color: white;
         font-size: 18px;
         font-family: "Palanquin";
-        text-decoration: none;
     }
 
     .social-icons {
@@ -1071,7 +1070,6 @@ header nav {
 .impressum {
     padding: 20px;
     font-family: "Palanquin", sans-serif;
-    text-align: center;
 }
 
 .impressum h1 {

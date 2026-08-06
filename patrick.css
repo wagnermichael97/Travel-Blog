@@ -629,3 +629,10 @@ main {
         width: 105px;
     }
 }
+
+  .footer-mob a {
+        color: white;
+        font-size: 18px;
+        font-family: "Palanquin";
+        text-decoration: none;
+    }
