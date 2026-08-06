@@ -75,7 +75,7 @@ header::before {
     z-index: -1;
 }
 
-header img {
+.logo {
     width: 56px;
     height: 56px;
 }
@@ -518,14 +518,13 @@ main p {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 50px;
+        padding: 0 60px;
         gap: 40px;
     }
 
     .nav-bar {
         display: flex;
         gap: 40px;
-
     }
 
     .nav-bar a {
@@ -548,8 +547,13 @@ main p {
 
     .landing {
         padding-top: 20px;
+        padding-left: 40px;
     }
 
+    .blog-info {
+        padding-left: 40px;
+    }
+    
     main p {
         padding: 0px 40px;
         font-size: 20px;
@@ -664,7 +668,7 @@ main p {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 50px;
+        padding: 0 120px;
         gap: 40px;
         margin-left: auto;
         margin-right: auto;
