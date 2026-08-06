@@ -57,6 +57,10 @@ body {
     display: none;
 }
 
+.nav-bar a:hover {
+    color: #f6cb4f;
+}
+
 header {
     height: 70px;
     display: flex;
@@ -533,6 +537,7 @@ main p {
         text-decoration: none;
         font-family: "Arima";
         font-size: 24px;
+        font-weight: 700;
     }
 
     .author-card {
