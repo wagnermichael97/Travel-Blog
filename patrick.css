@@ -45,9 +45,7 @@ header {
     white-space: nowrap;
 }
 
-.header-content nav a:hover {
-    color: #f6cb4f;
-}
+
 
 .header-content a:focus-visible {
     outline: 2px solid #f6cb4f;
