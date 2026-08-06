@@ -308,11 +308,11 @@ main p {
 
     color: #F1C953;
     gap: 8px;
-    margin-top: 30px;
     background-color: rgba(75, 169, 206, 0.747);
     border-radius: 40px;
     padding: 8px 16px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .share-section {
@@ -333,7 +333,70 @@ main p {
     color: #54370D;
 }
 
+.share-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 30px;
+}
 
+.share-details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.share-details[open] .share img {
+    display: none;
+}
+
+.share-wrapper img[alt="Pfeil-Icon"] {
+    position: absolute;
+    left: -54px;
+    top: -34px;
+    width: 32px;
+    height: auto;
+}
+
+.share-details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.share-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.share-details summary::marker {
+    content: "";
+}
+
+.share-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  
+}
+
+.share-menu-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.share-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.share-menu a {
+    color: rgba(75, 169, 206, 0.747);
+    font-family: "Arima";
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+}
 
 .footer {
     position: fixed;
@@ -524,8 +587,6 @@ main p {
     .footer-mob {
         width: 100%;
         align-items: center;
-
-
     }
 
     .footer-text {
@@ -703,6 +764,10 @@ main p {
 
     .share {
         gap: 10px;
+        
+    }
+
+    .share-wrapper {
         margin-top: 40px;
     }
 
@@ -717,8 +782,8 @@ main p {
 
     .share-container img[alt="Pfeil-Icon"] {
         position: absolute;
-        left: 21px;
-        top: -32px;
+        left: -119px;
+        top: -65px;
         width: 105px;
         height: auto;
     }
