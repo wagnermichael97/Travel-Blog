@@ -279,44 +279,143 @@ main {
     line-height: 120%;
 }
 
-.share {
-    padding: 48px 16px;
+.patrick-share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 88px;
+    padding: 24px 16px;
     text-align: center;
 }
 
-.share p {
+.patrick-share-text p {
     margin: 0;
-    padding-bottom: 5px;
-    color: #000704;
-    font-family: "Palanquin", sans-serif;
-    font-size: 16px;
+    padding: 0;
+    color: #030201;
+    font-family: "Arima", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 120%;
 }
 
-.share a {
-    display: inline-flex;
+.patrick-share-container {
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.patrick-share-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+.patrick-share-arrow {
+    position: absolute;
+    top: -34px;
+    left: -54px;
+    width: 32px;
+    height: auto;
+}
+
+.patrick-share-arrow-large {
+    display: none;
+}
+
+.patrick-share-details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.patrick-share-details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.patrick-share-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.patrick-share-details summary::marker {
+    content: "";
+}
+
+.patrick-share-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
     gap: 8px;
-    margin-top: 16px;
-    padding: 10px 24px;
-    color: #ffffff;
-    font-family: "Palanquin", sans-serif;
+    padding: 8px 16px;
+    color: #f1c953;
+    font-family: "Arima", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgba(75, 169, 206, 0.747);
+    border-radius: 40px;
+}
+
+.patrick-share-button p {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    background-color: transparent !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.patrick-share-button img,
+.patrick-share-menu-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.patrick-share-details[open] .patrick-share-button img {
+    display: none;
+}
+
+.patrick-share-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.patrick-share-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.patrick-share-links a {
+    color: rgba(75, 169, 206, 0.747);
+    font-family: "Arima", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    text-decoration: none;
-    background-color: #4eaa87;
-    border-radius: 20px;
+    text-decoration: underline;
 }
 
-.share a:hover {
-    background-color: rgba(75, 169, 206, 0.747);
+.patrick-share-links a:hover {
+    color: #f1c953;
 }
 
-.share img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
+.patrick-share-details summary:focus-visible,
+.patrick-share-links a:focus-visible {
+    outline: 2px solid #f1c953;
+    outline-offset: 3px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -370,8 +469,15 @@ main {
         padding-right: 32px;
         padding-left: 32px;
     }
-}
 
+    .patrick-share-section {
+        padding: 24px 200px;
+    }
+
+    .patrick-share-text p {
+        font-size: 20px;
+    }
+}
 
 @media screen and (min-width: 1281px) {
     header {
@@ -492,10 +598,34 @@ main {
         font-size: 24px;
     }
 
-    .share {
-        width: calc(100% - 32px);
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 64px 0;
+    .patrick-share-section {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-bottom: 88px;
+        margin-left: auto;
+        padding: 24px 500px;
+    }
+
+    .patrick-share-text p {
+        font-size: 24px;
+    }
+
+    .patrick-share-button {
+        gap: 10px;
+    }
+
+    .patrick-share-wrapper {
+        margin-top: 40px;
+    }
+
+    .patrick-share-arrow-small {
+        display: none;
+    }
+
+    .patrick-share-arrow-large {
+        display: block;
+        top: -65px;
+        left: -119px;
+        width: 105px;
     }
 }
