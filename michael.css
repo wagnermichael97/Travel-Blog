@@ -476,6 +476,13 @@ main p {
     line-height: 1.2;
 }
 
+.footer-mob a {
+        color: white;
+        font-size: 16px;
+        font-family: "Palanquin";
+        text-decoration: none;
+    }
+
 .social-icons {
     display: flex;
     align-items: center;
@@ -699,7 +706,10 @@ main p {
         text-decoration: none;
         font-family: "Arima";
         font-size: 24px;
+        font-weight: 700;
     }
+
+    
 
     .author-card {
         width: 272px;
@@ -807,6 +817,13 @@ main p {
         margin-left: auto;
         margin-right: auto;
         max-width: 1440px;
+    }
+
+    .footer-mob a {
+        color: white;
+        font-size: 18px;
+        font-family: "Palanquin";
+        text-decoration: none;
     }
 
     .footer-mob::before {
