@@ -85,7 +85,8 @@ header img {
     display: block;
     font-size: 14px;
     display: none;
-    transition: yellow 0.3s;
+    position: relative;
+    transition: yellow 0.2s ease;
 }
 
 .header-nav a:hover {
@@ -1337,3 +1338,44 @@ header img {
         font-family: "Palanquin";
         text-decoration: none;
     }
+
+
+
+
+    @media screen and (min-width: 1281px) {
+    .header-nav a {
+        position: relative;
+    }
+
+    .header-nav a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        width: 115%;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: opacity 0.2s ease;
+        pointer-events: none;
+    }
+
+    .header-nav a:nth-child(1)::after {
+        background-image: url("./assets/icons/highlights-hover.svg");
+    }
+
+    .header-nav a:nth-child(2)::after {
+        background-image: url("./assets/icons/faq-hover.svg");
+    }
+
+    .header-nav a:nth-child(3)::after {
+        background-image: url("./assets/icons/kontakt-hover.svg");
+    }
+
+    .header-nav a:hover::after {
+        opacity: 1;
+    }
+}
