@@ -500,7 +500,7 @@ button:hover {
 
 }
 
-.footer-mob a  {
+.footer-mob a {
     color: white;
     font-size: 16px;
     font-family: "Palanquin";
@@ -766,64 +766,84 @@ header nav {
 
 @media screen and (min-width: 1281px) {
 
-.nav-bar a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    font-family: "Arima";
-    font-size: 24px;
-    transition: color 0.2s ease;
-}
+    header::before {
+        left: 50%;
+        right: auto;
+        width: 100dvw;
+        transform: translateX(-50%);
+    }
 
-.nav-bar a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
+    .nav-bar {
+        display: flex;
+        gap: 72px;
+    }
 
-    width: 115%;
-    height: 16px;
+    .nav-bar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: "Arima";
+        font-size: 24px;
+    }
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    .nav-bar a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-family: "Arima";
+        font-size: 24px;
+        transition: color 0.2s ease;
+    }
 
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: opacity 0.2s ease;
-}
+    .nav-bar a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
 
-.nav-bar a:nth-child(1)::after {
-    background-image: url("./assets/icons/highlights-hover.svg");
-}
+        width: 115%;
+        height: 16px;
 
-.nav-bar a:nth-child(2)::after {
-    background-image: url("./assets/icons/faq-hover.svg");
-}
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
 
-.nav-bar a:nth-child(3)::after {
-    background-image: url("./assets/icons/kontakt-hover.svg");
-}
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: opacity 0.2s ease;
+    }
 
-/* Maus über dem Link */
+    .nav-bar a:nth-child(1)::after {
+        background-image: url("./assets/icons/highlights-hover.svg");
+    }
 
-.nav-bar a:hover::after {
-    opacity: 1;
-}
+    .nav-bar a:nth-child(2)::after {
+        background-image: url("./assets/icons/faq-hover.svg");
+    }
 
-/* Link angeklickt */
+    .nav-bar a:nth-child(3)::after {
+        background-image: url("./assets/icons/kontakt-hover.svg");
+    }
 
-.nav-bar a:focus,
-.nav-bar a:active,
-.nav-bar a.active {
-    color: #f6cb4f;
-}
+    /* Maus über dem Link */
 
-.nav-bar a:focus::after,
-.nav-bar a:active::after,
-.nav-bar a.active::after {
-    opacity: 0;
-}
+    .nav-bar a:hover::after {
+        opacity: 1;
+    }
+
+    /* Link angeklickt */
+
+    .nav-bar a:focus,
+    .nav-bar a:active,
+    .nav-bar a.active {
+        color: #f6cb4f;
+    }
+
+    .nav-bar a:focus::after,
+    .nav-bar a:active::after,
+    .nav-bar a.active::after {
+        opacity: 0;
+    }
 
     .yellow-shape {
         display: none;
@@ -895,25 +915,7 @@ header nav {
         max-width: 1440px;
     }
 
-    header::before {
-        left: 50%;
-        right: auto;
-        width: 100dvw;
-        transform: translateX(-50%);
-    }
 
-    .nav-bar {
-        display: flex;
-        gap: 72px;
-    }
-
-    .nav-bar a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-family: "Arima";
-        font-size: 24px;
-    }
 
     .footer {
         position: unset;
@@ -953,7 +955,7 @@ header nav {
         text-decoration: none;
     }
 
-    
+
 
     .social-icons {
         display: flex;
