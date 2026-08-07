@@ -49,6 +49,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    
+}
+
 body {
     padding-bottom: 88px;
 }
