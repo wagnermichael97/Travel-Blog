@@ -167,7 +167,7 @@ header::before {
 
     overflow-x: hidden;
     scroll-snap-type: mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     border-top-right-radius: 80px;
 }
 
@@ -500,6 +500,14 @@ button:hover {
 
 }
 
+.footer-mob a  {
+    color: white;
+    font-size: 16px;
+    font-family: "Palanquin";
+    text-decoration: none;
+
+}
+
 .footer-mob::before {
     content: "";
     position: absolute;
@@ -516,8 +524,10 @@ button:hover {
 
 .footer-text p {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.2;
+    font-family: "Palanquin";
+
 }
 
 .copyright-text {
@@ -888,7 +898,7 @@ header nav {
     header::before {
         left: 50%;
         right: auto;
-        width: 100vw;
+        width: 100dvw;
         transform: translateX(-50%);
     }
 
@@ -925,7 +935,7 @@ header nav {
     .footer-mob::before {
         left: 50%;
         right: auto;
-        width: 100vw;
+        width: 100dvw;
         transform: translateX(-50%);
     }
 
@@ -942,6 +952,8 @@ header nav {
         font-family: "Palanquin";
         text-decoration: none;
     }
+
+    
 
     .social-icons {
         display: flex;
