@@ -38,6 +38,12 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+html, body {
+    overflow-x: hidden;
+    
 }
 
 body {
@@ -164,8 +170,8 @@ header::before {
 
 .slider {
     display: flex;
-
     overflow-x: hidden;
+    overflow-y: hidden;
     scroll-snap-type: mandatory;
     scroll-behavior: auto;
     border-top-right-radius: 80px;
