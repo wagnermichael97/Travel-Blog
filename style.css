@@ -1095,6 +1095,7 @@ header nav {
     padding: 20px;
     font-family: "Palanquin", sans-serif;
     text-align: center;
+    height: 100vh;
 }
 
 .impressum h1 {
